@@ -1,0 +1,28 @@
+{
+  "name": "docker-service-ls",
+  "version": "1.0.0",
+  "description": "Lists services running inside a docker swarm using the docker api",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && tape test.js | faucet"
+  },
+  "repository": "f-mer/docker-service-ls",
+  "keywords": [
+    "docker",
+    "swarm",
+    "service",
+    "services",
+    "ls"
+  ],
+  "author": "Fabian Mersch",
+  "license": "MIT",
+  "dependencies": {
+    "docker-remote-api": "^4.4.1"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.9.1",
+    "faucet": "0.0.1",
+    "tape": "^4.8.0"
+  }
+}
